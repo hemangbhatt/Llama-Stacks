@@ -1,0 +1,164 @@
+CMSC341 Project 1 Gradesheet
+-------------------------------------------------------------------------------
+Student ID: hb6
+
+Max grade: 100
+Raw grade: 100
+Late penalty: 0
+Total grade: 100
+
+(Total grade = Raw grade - Late penalty)
+
+Grader Notes:
+   Good job!
+
+-------------------------------------------------------------------------------
+I. Critical Errors during compilation
+
+   None
+
+   No submission (skip rest of this rubric) 0
+
+   Program uses STL classes instead of Llama class -70
+
+   Program does not compile with any of the test programs and/or crashes
+   without producing any output. Grading based on effort.
+
+   Removing one or two minor bugs will fix this project. (56-65)
+   Significant progress made (46-55)
+   Not much progress made. (36-45)
+   Barely started coding. (0-35)
+
+   Score =
+
+   Other:
+
+--------------------------------------------------------------------------------
+II. Submission Errors
+
+   No Driver.cpp submitted -5 pts
+   Did not place the code under src/ folder.  -3 pts
+   Additional tweaking required for compilation: -3 to -6 pts
+   Other submission errors: (specify)
+
+--------------------------------------------------------------------------------
+III. Correctness
+
+Memory leak detected by valgrind -5 pts
+
+A. Testing with proj1test1.cpp (Basic test of push, size, peek and pop)
+
+   Compiled but segfaulted during test, -1pt for each test case below that
+   should have appeared after segfault (Max -6pts)
+
+   Initial size is wrong  -1 pt
+   Failed basic peek test -1 pts
+   Failed basic pop test  -1 pts
+   Final size is not zero -1 pt
+   No/wrong exception for popping empty stack -1 pt
+   # of LlamaNodes created/destroyed is too big -1 pt
+
+B. Testing with proj1test2.cpp (Basic test of dup, swap and rot)
+
+   Compiled but segfaulted during test, -1pt for each test case below that
+   should have appeared after segfault (Max -5pts)
+
+   Initial size is wrong  -1 pt
+   Failed peek test -1 pts
+   Failed pop test  -1 pts
+   Final size is not zero -1 pt
+   # of LlamaNodes created/destroyed is too big -1 pt
+
+C. Testing with proj1test3.cpp (testing memory allocation and OvCoInt)
+
+   Compiled but segfaulted during test, -1pt for each test case below that
+   should have appeared after segfault (Max -7pts)
+
+   LlamaNode report #1: nodes destroyed not 0  -1pts
+   LlamaNode report #2: nodes destroyed not 1  -1pts
+   LlamaNode report #3: additional nodes destroyed  -1pts
+   LlamaNode report #4: too many nodes created/destroyed  -1pts
+
+   Failed peek test -1 pts
+   Failed pop test  -1 pts
+   Final size is not zero -1 pt
+
+D. Testing with proj1test4.cpp (test with lots of data)
+
+   Compiled but segfaulted during test, -1pt for each test case below that
+   should have appeared after segfault (Max -4pts)
+
+   Initial size is wrong -1 pt
+   Pop test failed -1pts
+   Final size is not zero -1 pt
+   # of LlamaNodes created/destroyed is too big -1 pt
+
+E. Testing with proj1test5.cpp (Testing copy constructor, assignment operator)
+
+   Compiled but segfaulted during test, -1pt for each test case below that
+   should have appeared after segfault (Max -8pts)
+
+   Testing copy constructor:
+   Initial size is wrong -1 pt
+   Peek test failed -1pts
+   Pop test failed -1pts
+   Final size is not zero -1 pt
+
+   Testing assignment operator:
+   Initial size is wrong -1 pt
+   Peek test failed -1pts
+   Pop test failed -1pts
+   Final size is not zero -1 pt
+
+--------------------------------------------------------------------------------
+III. Implementation
+
+  Linked list uses a dummy node -1pt
+
+  Read and/or write errors reported by valgrind -3pts
+    (even if there is no seg fault or memory leak)
+
+  More than one extra node in the Llama Stack -3pts
+
+--------------------------------------------------------------------------------
+IV. Efficiency
+
+  push() not O(1) time  -2pts
+  pop()  not O(1) time  -2pts
+  size() not O(1) time  -2pts
+  dup()  not O(1) time  -1pts
+  swap() not O(1) time  -1pts
+  rot()  not O(1) time  -1pts
+
+--------------------------------------------------------------------------------
+V. Design
+
+  Class design is clear, simple, and logical.
+
+  Classes missing required member variables -5 pts
+  Classes missing required functions -5 pts
+
+  Class design awkward -5 to 10 pts
+      (specify):
+
+--------------------------------------------------------------------------------
+VI. Documentation
+
+  Documentation is sufficient and reasonable
+
+  Documentation is terse and not meaningful -3pts
+
+  Missing header comments   -3pts
+
+  Missing function headers  -3pts
+
+  Almost no documentation -5pts
+
+--------------------------------------------------------------------------------
+NOTE:
+
+If you believe your project was graded in error you can see the TAs IN PERSON
+during their office hours. This makes the overall process and satisfaction much
+better. Emails will not be returned regarding grading. You will only have a
+week and a half from the original due date to get your project checked out since
+it will be moved off of GL to save space.
